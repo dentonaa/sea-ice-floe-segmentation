@@ -55,6 +55,8 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
    - In the Inspect Image Histogram subsection:
    
      - Click to Display Image Histogram
+
+![Example Image Histogram](Figures/imhist.png)
    
    - In the Choose Classification Threshold subsection:
  

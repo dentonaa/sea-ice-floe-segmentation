@@ -48,6 +48,8 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
 
    - Verify the image borders visually. 
 
+![Example Image Border](Figures/imborder.png)
+
 2. In the Classify Image section:
 
    - In the Inspect Image Histogram subsection:

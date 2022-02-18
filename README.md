@@ -62,6 +62,8 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
  
      - Use the sliding scale or enter a value to choose the classification threshold (seperating ice [1] from water [0] in the resulting binary image) and Click to Classify Image
 
+![Example Classified Image](Figures/bwimage.png)
+
    - Once you are happy with your chosen classification threshold, in the Save Classified Image subsection:
   
      - Click to Save Classified Image
@@ -71,14 +73,20 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
    - In the Choose Number of Erosions subsection:
   
      - Choose and enter the number of erosions to erode your image (sea ice floes). Choose an appropriate number to seperate your largest sea ice floes. The hierachical   scheme of the segmentation will erode the largest to smallest floes iteritavely and automatically. See Denton and Timmermans (2021) for further details.
+
+![Example Test Erosion](Figures/testerode.png)
      
 4. Once you are content with your chosen parameters (Classification Threshold and Number of Erosions), in the Segment Image section:
 
    - Click to Segment Image
 
+![Example Segmented Image](Figures/imseg.png)
+
 5. (Optional) If you wish, you can clear any segmented floes from the image borders, as these floes should not be included in certain types of image product analysis, such as Floe Size Distrution (FSD) analysis (see Denton and Timmermans, 2021). In the Clear Border-Intersecting Sea Ice Floes section:
 
    - Click to Clear Border Floes
+
+![Example Border-Cleared Segmented Image](Figures/imsegbc.png)
 
 6. (Optional) If you have run the border clearing, you can save the border-cleared segmentation. The non-border cleared segmentation files have already been saved at this point in the code. In the Final Steps and Save Sea Ice Floe Segmented Image section:
 

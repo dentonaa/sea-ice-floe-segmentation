@@ -37,6 +37,8 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
    - In the Import Image subsection:
  
      - Click to Import Image
+
+![Example Image](Figures/Image.png)
    
    - In the Check Image subsection:
    

@@ -76,6 +76,8 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
 
    - Click to Save Segmented Image
 
+### Output Segmentation Files
+
 In your segmentation write path, you will see 5 files:
 
 1. Classified image (.png) 
@@ -86,7 +88,7 @@ In your segmentation write path, you will see 5 files:
       
 4. Segmented image (.png, RGB)
 
-      Naming convention: **imagename_bwt000e00hs_labeled_rgb.png** where *bwt* is again the classification threshold used and *e* stands for erosion and is followed by the number of erosions used to segment the image. *hs* indicates that this implementation of the code uses a half-step hierarchical scheme in which each group of successively smaller floes is segmented using roughly half the number of erosions used in the previous step.
+      Naming convention: **imagename_bwt000e00hs_labeled_rgb.png** where *bwt* is again the classification threshold used and *e* stands for erosion and is followed by the number of erosions used to segment the image. *hs* indicates that this implementation of the code uses a half-step hierarchical scheme in which each group of successively smaller floes is segmented using roughly half the number of erosions used in the previous step. *rgb* indicates this is the segmented image represented in color (red-green-blue).
       
       This segmented image is not border-cleared of floes.
       
@@ -100,14 +102,26 @@ In your segmentation write path, you will see 5 files:
       - **bwt**: classification threshold (*double*)
       - **cols**: number of image columns (*double*)
       - **L**: for 'Label Array'; segmented image array containing positive integer values (numerical labels) representing uniquely labeled floes and values of 0 representing ocean (rows x cols *double*)
-      - **Lrgb**: rgb Label Array; segmented image as an rgb image (rows x cols x  3 *uint8*)
-      - **numErosions**: vector containing number of erosions used at each hierarchical step (left to right: highest to lowest, where the highest matches the number of erosions chosen. 
-      - **numfmax**: the highest value numerical floe label. This is also the number of floes segmented.
-      - 
+      - **Lrgb**: RGB (red-green-blue) Label Array; segmented image as an RGB image (rows x cols x  3 *uint8*)
+      - **numErosions**: vector containing number of erosions used at each hierarchical step (left to right: highest to lowest, where the highest matches the number of erosions chosen (1 x n *double*)
+      - **numfmax**: the highest value numerical floe label. This is also the number of floes segmented (*double*)
+      - **rows**: number of image rows (*double*)
 
+      This is the non border-cleared segmentation file.
+      
 8. Border-cleared segmented image (.png, RGB)
-9. Border-cleared segmentation MATLAB file (.m) 
 
+      Naming convention: **imagename_bwt000e00hs_bc_labeled_rgb.png** as above and where *bc* stands for border-cleared. 
+      
+10. Border-cleared segmentation MATLAB file (.m)
+
+      Naming convention: **imagename_bwt000e00hs_bc_labeled.m** as above. 
+      
+      The file variables are as above but for the border-cleared segmentation. Note that in this instance, **numfmaxbc** indicates the highest value numerical floe label for the boder-cleared segmentation, but not the total number of floes (as specific floe labels are removed during border clearing). 
+    
+### Segmentation Object Analysis (such as Floe Size Distribution Retrieval)
+
+This segmentation script was designed to be used directly to obtain floe sizes for Floe Size Distribution characterization, but can be used for other analysis, such as for floe shape. 
 
 ## References
 Denton, A. A. and Timmermans, M.-L.: Characterizing the Sea-Ice Floe Size Distribution in the Canada Basin from High-Resolution Optical Satellite Imagery, The Cryosphere Discuss. [preprint], https://doi.org/10.5194/tc-2021-368, in review, 2021.

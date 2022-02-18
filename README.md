@@ -17,7 +17,7 @@ To run this Live Script (.mlx), you will need access to at least the Basic MATLA
 - Image Processing Toolbox
 
 ### How to Run the Live Script
-The Live Script is designed to be easy to use; however, a detailed explanation is provided here.
+The Live Script is designed to be easy to use; however, a detailed explanation is provided here with an example image and segmentation.
 
 First Steps:
 

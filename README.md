@@ -44,6 +44,8 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
    
      - Check the image for pixel values of 1 outside of the image bounds. Some uncalibrated satellite images are processed to contain image data (such as integer values      similar to actual data values) outside of the sensor view area (this is a known issue in particular with United States Geological Survey Global Fidicual imagery). Answer yes or no to "Pixel values of 1 outside of image bounds only?" and press "Complete Image Check". Choose yes only if there are values of 1 outside of the bounds, and not also inside. If there are similar values outside and inside of the bounds, the image may be segmented but will not be able to be border-cleared of sea ice floes properly (see later).  
 
+![Example Check for Pixel Values of 1](Figures/pixvals1.png)
+
    - Verify the image borders visually. 
 
 2. In the Classify Image section:

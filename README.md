@@ -137,7 +137,7 @@ In your segmentation write path, you will see 5 files:
     
 ### Segmentation Object Analysis (such as Floe Size Distribution Retrieval)
 
-This segmentation script was designed to be used directly to obtain floe sizes for Floe Size Distribution characterization, but can be used for other analysis, such as for floe shape. For retrieval of floe properties from the labeled arrays **L** in the MATLAB segmentation files, see the MATLAB function regionprops. For more on FSD analysis, see Denton and Timmermans (2021).
+This segmentation script was designed to be used directly to obtain floe sizes for Floe Size Distribution characterization, but can be used for other analysis, such as for floe shape. For retrieval of floe properties from the labeled arrays **L** in the MATLAB segmentation files, see the MATLAB function **regionprops**. For more on FSD analysis, see Denton and Timmermans (2021).
 
 ## References
 Denton, A. A. and Timmermans, M.-L.: Characterizing the Sea-Ice Floe Size Distribution in the Canada Basin from High-Resolution Optical Satellite Imagery, The Cryosphere Discuss. [preprint], https://doi.org/10.5194/tc-2021-368, in review, 2021.

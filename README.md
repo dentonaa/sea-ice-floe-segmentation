@@ -78,7 +78,35 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
 
 In your segmentation write path, you will see 5 files:
 
-1. 
+1. Classified image (.png) 
+
+      Naming convention: **imagename_bwt000_classified.png** where *bwt* stands for black-white threshold and is followed by the numerical value of your classification threshold used to classify the image.
+      
+      The classified image is the binary image used in the segmentation of your original image. 
+      
+4. Segmented image (.png, RGB)
+
+      Naming convention: **imagename_bwt000e00hs_labeled_rgb.png** where *bwt* is again the classification threshold used and *e* stands for erosion and is followed by the number of erosions used to segment the image. *hs* indicates that this implementation of the code uses a half-step hierarchical scheme in which each group of successively smaller floes is segmented using roughly half the number of erosions used in the previous step.
+      
+      This segmented image is not border-cleared of floes.
+      
+6. Segmentation MATLAB file (.m)
+
+      Naming convention: **imagename_bwt000e00hs_labeled.m** as above. 
+      
+      This MATLAB file contains the following segmentation variables and arrays:
+      
+      - **bw**: classified image array (*logical*)
+      - **bwt**: classification threshold (*double*)
+      - **cols**: number of image columns (*double*)
+      - **L**: for 'Label Array'; segmented image array containing positive integer values (numerical labels) representing uniquely labeled floes and values of 0 representing ocean (rows x cols *double*)
+      - **Lrgb**: rgb Label Array; segmented image as an rgb image (rows x cols x  3 *uint8*)
+      - **numErosions**: vector containing number of erosions used at each hierarchical step (left to right: highest to lowest, where the highest matches the number of erosions chosen. 
+      - **numfmax**: the highest value numerical floe label. This is also the number of floes segmented.
+      - 
+
+8. Border-cleared segmented image (.png, RGB)
+9. Border-cleared segmentation MATLAB file (.m) 
 
 
 ## References

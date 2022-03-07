@@ -5,7 +5,7 @@ This repository contains a user-friendly, MATLAB Live Script to easily and autom
 
 The algorithm and code was written by Alexis Denton (Yale University) for and used to segment high-resolution optical satellite images in the accompanying submitted manuscript (preprint, in review) coauthored with Mary-Louise Timmermans (Yale University), Denton and Timmermans (2021) (https://doi.org/10.5194/tc-2021-368). 
 
-__This algorithm was developed to contribute an easy, automated, and reproducable method to the Arctic science community for the identification of sea ice floes in remote sensing imagery. If you use this algorithm in your work or research or for any other reason, credit the author here (Alexis Denton) and cite the code DOI issued by Zenodo. The DOI badge below points to the latest released version of the repository.__
+__This algorithm was developed to contribute an easy, automated, and reproducable method to the Arctic science community for the identification of sea ice floes in remote sensing imagery. If you use this algorithm in your work or research or for any other reason, credit the author here (Alexis Denton) and cite the code DOI issued by Zenodo (below). The DOI badge below points to the latest released version of the repository.__
 
 [![DOI](https://zenodo.org/badge/457157200.svg)](https://zenodo.org/badge/latestdoi/457157200)
 

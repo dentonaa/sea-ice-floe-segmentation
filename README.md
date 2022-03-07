@@ -38,17 +38,17 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
  
      - Click to Import Image
 
-![Example Image](Figures/Image.png)
+![Example Image](Figures/Image_v1.0.0.png)
    
    - In the Check Image subsection:
    
      - Check the image for pixel values of 1 outside of the image bounds. Some uncalibrated satellite images are processed to contain image data (such as integer values      similar to actual data values) outside of the sensor view area (this is a known issue in particular with United States Geological Survey Global Fidicual imagery). Answer yes or no to "Pixel values of 1 outside of image bounds only?" and press "Complete Image Check". Choose yes only if there are values of 1 outside of the bounds, and not also inside. If there are similar values outside and inside of the bounds, the image may be segmented but will not be able to be border-cleared of sea ice floes properly (see later).  
 
-![Example Check for Pixel Values of 1](Figures/pixvals1.png)
+![Example Check for Pixel Values of 1](Figures/pixvals1_v1.0.0.png)
 
    - Verify the image borders visually. 
 
-![Example Image Border](Figures/imborder.png)
+![Example Image Border](Figures/imborder_v1.0.0.0.png)
 
 2. In the Classify Image section:
 
@@ -56,13 +56,13 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
    
      - Click to Display Image Histogram
 
-![Example Image Histogram](Figures/imhist.png)
+![Example Image Histogram](Figures/imhist_v1.0.0.png)
    
    - In the Choose Classification Threshold subsection:
  
      - Use the sliding scale or enter a value to choose the classification threshold (seperating ice [1] from water [0] in the resulting binary image) and Click to Classify Image
 
-![Example Classified Image](Figures/bwimage.png)
+![Example Classified Image](Figures/bwimage_v1.0.0.png)
 
    - Once you are happy with your chosen classification threshold, in the Save Classified Image subsection:
   
@@ -74,19 +74,19 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
   
      - Choose and enter the number of erosions to erode your image (sea ice floes). Choose an appropriate number to seperate your largest sea ice floes. The hierachical   scheme of the segmentation will erode the largest to smallest floes iteritavely and automatically. See Denton and Timmermans (2021) for further details.
 
-![Example Test Erosion](Figures/testerode.png)
+![Example Test Erosion](Figures/testerode_v1.0.0.png)
      
 4. Once you are content with your chosen parameters (Classification Threshold and Number of Erosions), in the Segment Image section:
 
    - Click to Segment Image
 
-![Example Segmented Image](Figures/imseg.png)
+![Example Segmented Image](Figures/imseg_v1.0.0.png)
 
 5. (Optional) If you wish, you can clear any segmented floes from the image borders, as these floes should not be included in certain types of image product analysis, such as Floe Size Distrution (FSD) analysis (see Denton and Timmermans, 2021). In the Clear Border-Intersecting Sea Ice Floes section:
 
    - Click to Clear Border Floes
 
-![Example Border-Cleared Segmented Image](Figures/imsegbc.png)
+![Example Border-Cleared Segmented Image](Figures/imsegbc_v1.0.0.png)
 
 6. (Optional) If you have run the border clearing, you can save the border-cleared segmentation. The non-border cleared segmentation files have already been saved at this point in the code. In the Final Steps and Save Sea Ice Floe Segmented Image section:
 

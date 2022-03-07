@@ -92,6 +92,8 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
 
    - Click to Clear Border Floes
 
+![Example Border-Cleared Segmented Image](Figures/bwimbc_v1.0.0.png)
+
 ![Example Border-Cleared Segmented Image](Figures/imsegbc_v1.0.0.png)
 
 6. (Optional) If you have run the border clearing, you can save the border-cleared segmentation. The non-border cleared segmentation files have already been saved at this point in the code. In the Final Steps and Save Sea Ice Floe Segmented Image section:

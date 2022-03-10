@@ -144,11 +144,11 @@ In your segmentation write path, you will see 5 files:
       The file variables are as above but for the border-cleared segmentation. 
       
       Note: 
-      
+            
+      - **bw** here remains the original classified image array. 
       - **Lbcrgb** is the border-cleared RGB Label Array
       - **numfmaxbc** indicates the highest value numerical floe label for the boder-cleared segmentation, but not the total number of floes (as specific floe labels are removed during border clearing)
       - The other variable namings remain (**L** here is the border-cleared Label Array). 
-      - **bw** here remains the original classified image array. 
     
 ### Segmentation Object Analysis (such as Floe Size Distribution Retrieval)
 

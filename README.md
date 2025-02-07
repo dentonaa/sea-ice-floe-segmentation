@@ -78,7 +78,7 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
 
    - In the Choose Number of Erosions subsection:
   
-     - Choose and enter the number of erosions to erode your image (sea ice floes). Choose an appropriate number to seperate your largest sea ice floes. The hierachical   scheme of the segmentation will erode the largest to smallest floes iteritavely and automatically. See Denton and Timmermans (2021) for further details.
+     - Choose and enter the number of erosions to erode your image (sea ice floes). Choose an appropriate number to seperate your largest sea ice floes. The hierachical   scheme of the segmentation will erode the largest to smallest floes iteritavely and automatically. See Denton and Timmermans (2022) for further details.
 
 ![Example Test Erosion](Figures/testerode_v1.0.0.png)
      
@@ -88,7 +88,7 @@ Define parameters and run the Live Script. In the seafloeseg Live Script:
 
 ![Example Segmented Image](Figures/imseg_v1.0.0.png)
 
-5. (Optional) If you wish, you can clear any segmented floes from the image borders, as these floes should not be included in certain types of image product analysis, such as Floe Size Distrution (FSD) analysis (see Denton and Timmermans, 2021). In the Clear Border-Intersecting Sea Ice Floes section:
+5. (Optional) If you wish, you can clear any segmented floes from the image borders, as these floes should not be included in certain types of image product analysis, such as Floe Size Distrution (FSD) analysis (see Denton and Timmermans, 2022). In the Clear Border-Intersecting Sea Ice Floes section:
 
    - Click to Clear Border Floes
 
